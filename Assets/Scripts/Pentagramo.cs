@@ -20,7 +20,7 @@ public class Pentagramo : MonoBehaviour
         Fading,
         Rising
     }
-    private State state;
+    public State state;
     private float timer;
 
     // Use this for initialization
