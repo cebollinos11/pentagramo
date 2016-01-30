@@ -56,9 +56,11 @@ public class PentagramoDisplay : MonoBehaviour {
 
 		if(glowingFace.activeSelf){
 			glowingFace.SetActive(false);
+            halo.SetActive(false);
 		}
 		else {
 			glowingFace.SetActive(true);
+            halo.SetActive(true);
 		}
 		//yield return new WaitForSeconds(.5f);
 		//glowingFace.SetActive(true);
