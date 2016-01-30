@@ -49,6 +49,8 @@ public class Pentagramo : MonoBehaviour
                     parentTransform.rotation = Quaternion.LookRotation(inputDir, Vector3.up);
                     // Movement
                     parentTransform.position = parentTransform.position + parentTransform.forward * MovementSpeed * Time.deltaTime;
+
+
                 }
                 break;
             case State.Dropping:
