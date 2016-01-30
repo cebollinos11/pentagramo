@@ -20,7 +20,7 @@ public class Pentagramo : MonoBehaviour
         Fading,
         Rising
     }
-    private State state;
+    public State state;
     private float timer;
 
     // Use this for initialization
@@ -33,7 +33,7 @@ public class Pentagramo : MonoBehaviour
     void Update()
     {
         StateMachine();
-        Debug.Log(state);
+        //Debug.Log(state);
         switch (state)
         {
             case State.Upright:

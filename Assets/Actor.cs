@@ -70,6 +70,30 @@ public class Actor : MonoBehaviour {
         if (col.gameObject.tag == "Wall") {
             currentTarget = originalpos;
         }
+
+        Debug.Log("COLLIDERRRRRRR "+col.gameObject.tag);
+
+        if (col.gameObject.tag == "Player")
+        {
+
+            Pentagramo p = col.gameObject.GetComponent<Pentagramo>();
+            if (p.state == Pentagramo.State.Glowing || p.state == Pentagramo.State.Fading)
+            {
+                GetSwallowed();
+            }
+
+            Debug.Log(p.state);
+
+        }
     
     }
+
+    void GetSwallowed() {
+
+        Debug.Log("suchiiiiiiiiiiii");
+        Destroy(this.gameObject);
+    
+    }
+
+    
 }
