@@ -11,15 +11,18 @@ public class Actor : MonoBehaviour {
     public float wanderRange;
     public float wanderFrequencyChange;
     float currentWanderFrequencyTimer;
+    public float maxSpeed;
     public enum aI_states { 
     
         follow
     
     }
 
+    Rigidbody rB;
+
 	// Use this for initialization
 	void Start () {
-
+        rB = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
         FindNewRandomTarget();
         
@@ -34,10 +37,16 @@ public class Actor : MonoBehaviour {
 
     void Move(Vector3 dir) {
 
-        dir *= 0.0001f;
-        dir *= speed;
-        transform.position = new Vector3(transform.position.x + dir.x, transform.position.y, transform.position.z + dir.z);
+        
+        //transform.position = new Vector3(transform.position.x + dir.x, transform.position.y, transform.position.z + dir.z);
+        //rB.velocity += new Vector3(transform.position.x + dir.x,0f, transform.position.z + dir.z);
+        rB.velocity += dir*speed*Time.timeScale*0.01f;
 
+        if (rB.velocity.magnitude > maxSpeed)
+        {
+
+            rB.velocity = rB.velocity.normalized * maxSpeed;
+        }
     }
 	
 	// Update is called once per frame
