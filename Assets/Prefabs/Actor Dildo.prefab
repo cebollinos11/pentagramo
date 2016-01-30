@@ -773,6 +773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wanderFrequencyChange: 5
   maxSpeed: 5
+  ObjectID: 1
   ai: 0
 --- !u!135 &13512946
 SphereCollider:
@@ -872,7 +873,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: ObjectID
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 177730}
