@@ -23,6 +23,8 @@ public class Pentagramo : MonoBehaviour
         Fading,
         Rising
     }
+	public bool isMoving;
+
     public State state;
     private float timer;
 
@@ -49,7 +51,13 @@ public class Pentagramo : MonoBehaviour
                     parentTransform.rotation = Quaternion.LookRotation(inputDir, Vector3.up);
                     // Movement
                     parentTransform.position = parentTransform.position + parentTransform.forward * MovementSpeed * Time.deltaTime;
-                }
+					isMoving = true;
+
+				}
+				else
+				{
+					isMoving = false;
+				}
                 break;
             case State.Dropping:
                 rotationTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
@@ -93,7 +101,7 @@ public class Pentagramo : MonoBehaviour
             case State.Upright:
                 if(Input.GetButtonDown("Fire1"))
                 {
-                    state = State.Dropping;               
+                    state = State.Dropping;    
                 }
                 break;
             case State.Dropping:
