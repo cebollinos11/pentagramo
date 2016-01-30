@@ -5,10 +5,12 @@ public class Enemy : Actor {
     GameObject player;
     bool chasingPlayer;
     public float chaseBoost;
+    Animator anim;
 
 	// Use this for initialization
 	public override void Start () {
-        player = GameObject.FindGameObjectWithTag("Player");        
+        player = GameObject.FindGameObjectWithTag("Player");
+        anim = GetComponentInChildren<Animator>();
         base.Start();
 	
 	}
@@ -31,7 +33,7 @@ public class Enemy : Actor {
 
     public void StartChasing() {
         if (!chasingPlayer) {
-
+            anim.Play("mob_armature|kill");
             Debug.Log("start chasing");
             maxSpeed *= chaseBoost;
             chasingPlayer = true;
@@ -44,7 +46,7 @@ public class Enemy : Actor {
     public void StopChasing() {
 
         if (chasingPlayer) {
-
+            anim.Play("mob_armature|walk");
             Debug.Log("Stop chasing");
             chasingPlayer = false;
             maxSpeed /= chaseBoost;

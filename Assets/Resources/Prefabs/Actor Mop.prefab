@@ -413,13 +413,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 177676}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973d5deaeb789ab4480d3444c434b2a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 2794d1dbe76029545a227ffa74402112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  wanderRange: 5
   wanderFrequencyChange: 5
   maxSpeed: 1
+  chaseBoost: 1.5
 --- !u!135 &13516166
 SphereCollider:
   m_ObjectHideFlags: 1
