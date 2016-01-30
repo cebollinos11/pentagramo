@@ -8,8 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452518}
-  - 114: {fileID: 11420054}
-  - 114: {fileID: 11440568}
   m_Layer: 0
   m_Name: Pentagramo
   m_TagString: Untagged
@@ -28,6 +26,8 @@ GameObject:
   - 33: {fileID: 3356208}
   - 136: {fileID: 13646150}
   - 23: {fileID: 2343518}
+  - 114: {fileID: 11458892}
+  - 114: {fileID: 11498754}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -44,7 +44,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 433154}
   - 33: {fileID: 3341192}
-  - 64: {fileID: 6434384}
   - 23: {fileID: 2321210}
   m_Layer: 0
   m_Name: Pentagramo Face Clean
@@ -62,7 +61,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 496398}
   - 33: {fileID: 3365110}
-  - 64: {fileID: 6444718}
   - 23: {fileID: 2379432}
   m_Layer: 0
   m_Name: Pentagramo Face Glow
@@ -120,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.7547617, y: .499999225, z: 2.10583639}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 451476}
@@ -243,36 +241,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161932}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6434384
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139718}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6444718
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161932}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &11420054
+--- !u!114 &11458892
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101548}
+  m_GameObject: {fileID: 118520}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 330ac7ad8299a4548bc70ec6240e5818, type: 3}
@@ -280,20 +254,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 5
   FlatDuration: 1
-  bodyTransform: {fileID: 451476}
+  rotationTransform: {fileID: 451476}
+  parentTransform: {fileID: 452518}
   state: 0
---- !u!114 &11440568
+--- !u!114 &11498754
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101548}
+  m_GameObject: {fileID: 118520}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3291043516ab3460ea49827b5bcf20db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pentagramo: {fileID: 11420054}
+  pentagramo: {fileID: 11458892}
   dullFace: {fileID: 139718}
   glowingFace: {fileID: 161932}
 --- !u!136 &13646150
