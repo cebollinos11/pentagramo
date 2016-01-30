@@ -9,7 +9,8 @@ public class Pentagramo : MonoBehaviour
     public float FlatDuration = 1;
 
 
-    public Transform bodyTransform;
+    public Transform rotationTransform;
+    public Transform parentTransform;
 
     public enum State
     {
@@ -42,13 +43,13 @@ public class Pentagramo : MonoBehaviour
                     Vector3 inputDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
                     inputDir.Normalize();
                     // Facing direction
-                    transform.rotation = Quaternion.LookRotation(inputDir, Vector3.up);
+                    parentTransform.rotation = Quaternion.LookRotation(inputDir, Vector3.up);
                     // Movement
-                    transform.position = transform.position + transform.forward * MovementSpeed * Time.deltaTime;
+                    parentTransform.position = parentTransform.position + parentTransform.forward * MovementSpeed * Time.deltaTime;
                 }
                 break;
             case State.Dropping:
-                bodyTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
+                rotationTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
                 break;
             case State.Flat:
                             
@@ -61,7 +62,7 @@ public class Pentagramo : MonoBehaviour
                 timer += Time.deltaTime;
                 break;
             case State.Rising:
-                bodyTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                rotationTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 break;
         }
     }
