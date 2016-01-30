@@ -18,13 +18,17 @@ public class Actor : MonoBehaviour {
     
     }
 
+    Vector3 originalpos;
+
     Rigidbody rB;
 
 	// Use this for initialization
 	void Start () {
+        originalpos = transform.position;
         rB = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
         FindNewRandomTarget();
+        speed += Random.Range(0f, 3f);
         
 	    
 	}
@@ -71,4 +75,12 @@ public class Actor : MonoBehaviour {
         }
 	
 	}
+
+    void OnCollisionEnter (Collision col){
+
+        if (col.gameObject.tag == "Wall") {
+            currentTarget = originalpos;
+        }
+    
+    }
 }
