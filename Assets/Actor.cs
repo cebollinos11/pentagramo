@@ -10,6 +10,8 @@ public class Actor : MonoBehaviour {
     float currentWanderFrequencyTimer;
     public float maxSpeed;
 
+    protected Animator animator;
+
 
     Vector3 originalpos;
 
@@ -20,6 +22,8 @@ public class Actor : MonoBehaviour {
         
         originalpos = transform.position;
         rB = GetComponent<Rigidbody>();
+
+        animator = GetComponentInChildren<Animator>();
         
         FindNewTarget();
         //speed += Random.Range(0f, 3f);
