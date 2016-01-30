@@ -72,7 +72,7 @@ public class Actor : MonoBehaviour {
     void OnCollisionEnter (Collision col){
 
         if (col.gameObject.tag == "Wall") {
-            currentTarget = originalpos;
+            //currentTarget = originalpos;
         }
 
         Debug.Log("COLLIDERRRRRRR "+col.gameObject.tag);

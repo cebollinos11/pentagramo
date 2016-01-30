@@ -3,8 +3,11 @@ using System.Collections;
 
 public class Prop : Actor {
 
+    GameObject followWho;
+    
+
     public enum aiTypes{
-        random,scared
+        random,scared,followMop
 
     }
 
@@ -21,8 +24,14 @@ public class Prop : Actor {
                 base.FindNewTarget();
                 break;
             case aiTypes.scared:
-                Debug.Log(player);
+                
                 currentTarget = transform.position - player.transform.position;
+                currentTarget  = Vector3.Scale( currentTarget , new Vector3(1,0,1))+new Vector3(0,1,0)*transform.position.y;
+                
+                Debug.Log("going to "+currentTarget.ToString());
+                break;
+            case aiTypes.followMop:
+                currentTarget = followWho.transform.position;
                 break;
         
         }
@@ -32,11 +41,20 @@ public class Prop : Actor {
 
     public override void Start()
     {
+        Debug.Log("player found " + player);
+        if (ai == aiTypes.followMop)
+        {
+            followWho = GameObject.FindGameObjectWithTag("Enemy");
+            Debug.Log("following " + followWho.ToString());
+
+        }
         player = GameObject.FindGameObjectWithTag("Player");
         base.Start();
         
-        Debug.Log("player found " + player);
+        
         animator.Play("book_armature|walk");
+
+       
         
     }
 
