@@ -11,6 +11,8 @@ public class Pentagramo : MonoBehaviour
     public Transform rotationTransform;
     public Transform parentTransform;
 
+    public GameObject FaceToRotate;
+
     PentagramoDisplay pDisplay;
 
     public enum State
@@ -51,6 +53,8 @@ public class Pentagramo : MonoBehaviour
                     parentTransform.rotation = Quaternion.LookRotation(inputDir, Vector3.up);
                     // Movement
                     parentTransform.position = parentTransform.position + parentTransform.forward * MovementSpeed * Time.deltaTime;
+
+                    FaceToRotate.transform.Rotate(-Vector3.forward*Time.deltaTime*300f);
                 }
                 else
                 {
