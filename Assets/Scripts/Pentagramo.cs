@@ -8,15 +8,17 @@ public class Pentagramo : MonoBehaviour
     public float MovementSpeed = 5;
     public float FlatDuration = 1;
 
-
     public Transform rotationTransform;
     public Transform parentTransform;
+
+    PentagramoDisplay pDisplay;
 
     public enum State
     {
         Upright,
         Dropping,
         Flat,
+        FrameGlowing,
         Glowing,
         Fading,
         Rising
@@ -28,6 +30,7 @@ public class Pentagramo : MonoBehaviour
     void Start()
     {
         state = State.Upright;
+        pDisplay = GetComponent<PentagramoDisplay>();
     }
 
     // Update is called once per frame
@@ -54,12 +57,18 @@ public class Pentagramo : MonoBehaviour
             case State.Flat:
                             
                 break;
+            case State.FrameGlowing:
+                pDisplay.StartParticles();
+                state = State.Glowing;
+                break;
+
             case State.Glowing:
                 // Glowing effect
                 break;
             case State.Fading:
                 // Increment timer
                 timer += Time.deltaTime;
+                pDisplay.StopParticles();
                 break;
             case State.Rising:
                 rotationTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
@@ -98,7 +107,7 @@ public class Pentagramo : MonoBehaviour
                 }
                 else if(Input.GetButtonDown("Fire2"))
                 {
-                    state = State.Glowing;
+                    state = State.FrameGlowing;
                 }
                 break;
             case State.Glowing:
@@ -112,7 +121,7 @@ public class Pentagramo : MonoBehaviour
             case State.Fading:
                 if (Input.GetButtonDown("Fire2"))
                 {
-                    state = State.Glowing;
+                    state = State.FrameGlowing;
                 }
                 else if (timer >= FlatDuration)
                 {
