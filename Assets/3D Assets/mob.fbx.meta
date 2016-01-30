@@ -29,6 +29,7 @@ ModelImporter:
     400020: root
     4300000: Circle.001
     7400000: mob_armature|walk
+    7400002: mob_armature|kill
     9500000: //RootNode
     13700000: Circle.001
   materials:
@@ -62,6 +63,54 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Circle.001
+        weight: 1
+      - path: mob_armature
+        weight: 1
+      - path: mob_armature/root
+        weight: 1
+      - path: mob_armature/root/master
+        weight: 1
+      - path: mob_armature/root/master/end
+        weight: 1
+      - path: mob_armature/root/master/end/end_end
+        weight: 1
+      - path: mob_armature/root/master/head_a
+        weight: 1
+      - path: mob_armature/root/master/head_a/head_b
+        weight: 1
+      - path: mob_armature/root/master/head_a/head_b/head_b_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: mob_armature|kill
+      takeName: mob_armature|kill
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
