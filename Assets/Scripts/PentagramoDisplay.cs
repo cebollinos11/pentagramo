@@ -38,7 +38,7 @@ public class PentagramoDisplay : MonoBehaviour {
 	}
 
 	void pulse(){
-		Debug.Log("Hi!");
+		
 
 		if(glowingFace.activeSelf){
 			glowingFace.SetActive(false);

@@ -6,10 +6,12 @@ public class Enemy : Actor {
     bool chasingPlayer;
     public float chaseBoost;
     Animator anim;
+    Pentagramo pGramo;
 
 	// Use this for initialization
 	public override void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
+        pGramo = player.GetComponent<Pentagramo>();
         anim = GetComponentInChildren<Animator>();
         base.Start();
 	
@@ -22,7 +24,8 @@ public class Enemy : Actor {
     {
         if (chasingPlayer)
         {
-            currentTarget = player.transform.position;
+            if(player!=null)
+                currentTarget = player.transform.position;
             
 
         }
@@ -37,10 +40,9 @@ public class Enemy : Actor {
             Debug.Log("start chasing");
             maxSpeed *= chaseBoost;
             chasingPlayer = true;
+            FindNewTarget();
+        }    
         
-        }
-       
-        FindNewTarget();
     }
 
     public void StopChasing() {
@@ -50,10 +52,11 @@ public class Enemy : Actor {
             Debug.Log("Stop chasing");
             chasingPlayer = false;
             maxSpeed /= chaseBoost;
+            FindNewTarget();
         
         }
         
-        FindNewTarget();
+        
     
     }
 
@@ -78,6 +81,17 @@ public class Enemy : Actor {
 
     public override void Update()
     {
+
+        if(pGramo.state == Pentagramo.State.Glowing  || pGramo.state == Pentagramo.State.Fading)
+        {   
+            StartChasing();
+        }
+        else{
+            StopChasing();
+        }
+
+
+
         if (Input.GetKeyDown(KeyCode.Q)) {
             StartChasing();
         }

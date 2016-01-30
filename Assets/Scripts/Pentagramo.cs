@@ -74,6 +74,9 @@ public class Pentagramo : MonoBehaviour
     
     }
 
+
+  
+
     void StateMachine()
     {
         switch(state)
