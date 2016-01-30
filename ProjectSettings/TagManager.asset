@@ -10,7 +10,7 @@ TagManager:
   - WinPanel
   - ProgressPanel
   - Enemy
-  - GameMaker
+  - GameManager
   layers:
   - Default
   - TransparentFX
