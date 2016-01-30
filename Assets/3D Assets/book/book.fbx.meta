@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: b5168fa4a24b240549466edf2fb8c7a6
+timeCreated: 1454155945
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: book_armature
+    100004: book_back
+    100006: book_front
+    100008: book_front_end
+    100010: book_top
+    100012: Cube
+    100014: Empty
+    100016: root
+    400000: //RootNode
+    400002: book_armature
+    400004: book_back
+    400006: book_front
+    400008: book_front_end
+    400010: book_top
+    400012: Cube
+    400014: Empty
+    400016: root
+    4300000: Cube
+    7400000: book_armature|walk
+    7400002: book_armature|walk.001
+    7400004: Cube|walk.001
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: book_armature|walk
+      takeName: book_armature|walk
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: book_armature
+        weight: 1
+      - path: book_armature/root
+        weight: 1
+      - path: book_armature/root/book_back
+        weight: 1
+      - path: book_armature/root/book_back/book_top
+        weight: 1
+      - path: book_armature/root/book_back/book_top/book_front
+        weight: 1
+      - path: book_armature/root/book_back/book_top/book_front/book_front_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: book_armature|walk.001
+      takeName: book_armature|walk.001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: book_armature
+        weight: 1
+      - path: book_armature/root
+        weight: 1
+      - path: book_armature/root/book_back
+        weight: 1
+      - path: book_armature/root/book_back/book_top
+        weight: 1
+      - path: book_armature/root/book_back/book_top/book_front
+        weight: 1
+      - path: book_armature/root/book_back/book_top/book_front/book_front_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Cube|walk.001
+      takeName: Cube|walk.001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: book_armature
+        weight: 1
+      - path: book_armature/root
+        weight: 1
+      - path: book_armature/root/book_back
+        weight: 1
+      - path: book_armature/root/book_back/book_top
+        weight: 1
+      - path: book_armature/root/book_back/book_top/book_front
+        weight: 1
+      - path: book_armature/root/book_back/book_top/book_front/book_front_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
