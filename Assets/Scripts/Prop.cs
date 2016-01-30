@@ -11,8 +11,12 @@ public class Prop : Actor {
 
     }
 
+
+    public Recipe.Ingredient ObjectID;
+
     public aiTypes ai;
     GameObject player;
+    Recipe recipeManager;
 
     public override void FindNewTarget()
     {
@@ -50,8 +54,8 @@ public class Prop : Actor {
         }
         player = GameObject.FindGameObjectWithTag("Player");
         base.Start();
-        
-        
+
+        recipeManager = GameObject.FindGameObjectWithTag("RecipePanel").GetComponent<Recipe>();
         animator.Play("book_armature|walk");
 
        
@@ -61,9 +65,26 @@ public class Prop : Actor {
     void GetSwallowed()
     {
 
-        Debug.Log("suchiiiiiiiiiiii");
-        Destroy(this.gameObject);
 
+        StartCoroutine(DieRoutine());
+
+    }
+
+
+    IEnumerator DieRoutine()
+    {
+        maxSpeed = 0f;
+        Vector3 ratio = transform.localScale / 50f;
+
+        do
+        {
+            transform.localScale -= ratio;
+            yield return new WaitForSeconds(0.1f);
+        } while (transform.localScale.x > 0);
+
+        yield return new WaitForSeconds(3f);
+        recipeManager.UpdateIngredient(ObjectID);
+        Destroy(transform.gameObject);
     }
 
     void OnTriggerStay(Collider col) {
