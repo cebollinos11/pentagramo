@@ -4,7 +4,7 @@ using System.Collections;
 public class Pentagramo : MonoBehaviour
 {
 
-
+    
     public float MovementSpeed = 5;
     public float FlatDuration = 1;
 
@@ -14,6 +14,8 @@ public class Pentagramo : MonoBehaviour
     public GameObject FaceToRotate;
 
     PentagramoDisplay pDisplay;
+
+    GameManager gameManager;
 
     public enum State
     {
@@ -35,6 +37,9 @@ public class Pentagramo : MonoBehaviour
     {
         state = State.Upright;
         pDisplay = GetComponent<PentagramoDisplay>();
+
+        gameManager = GameObject.FindGameObjectWithTag("GameMaker").GetComponent<GameManager>();
+        
     }
 
     // Update is called once per frame
@@ -89,8 +94,25 @@ public class Pentagramo : MonoBehaviour
     public void Die() {
 
         Debug.Log("GAME OVER");
-        Destroy(parentTransform.gameObject);
+        StartCoroutine(DieRoutine());
+        
     
+    }
+
+
+    IEnumerator DieRoutine() {
+
+        Vector3 ratio = parentTransform.localScale/50f;
+
+        do
+        {
+            parentTransform.localScale -= ratio;
+            yield return new WaitForSeconds(0.1f);
+        } while (parentTransform.localScale.x > 0);
+
+        yield return new WaitForSeconds(3f);
+        gameManager.Restart();
+        Destroy(parentTransform.gameObject);
     }
 
 
