@@ -67,6 +67,13 @@ public class Pentagramo : MonoBehaviour
         }
     }
 
+    public void Die() {
+
+        Debug.Log("GAME OVER");
+        Destroy(parentTransform.gameObject);
+    
+    }
+
     void StateMachine()
     {
         switch(state)

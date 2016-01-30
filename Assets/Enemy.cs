@@ -58,6 +58,23 @@ public class Enemy : Actor {
     }
 
 
+    void OnTriggerStay(Collider col)
+    {
+
+        if (col.gameObject.tag == "Player")
+        {
+
+            Pentagramo p = col.gameObject.GetComponent<Pentagramo>();
+            if (p.state == Pentagramo.State.Glowing || p.state == Pentagramo.State.Fading)
+            {
+
+                p.Die();
+            }
+
+
+        }
+    }
+
 
     public override void Update()
     {
