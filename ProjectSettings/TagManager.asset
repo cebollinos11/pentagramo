@@ -5,7 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
-  - Enemy
+  - LevelParent
+  - RecipePanel
+  - WinPanel
+  - ProgressPanel
   layers:
   - Default
   - TransparentFX
