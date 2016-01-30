@@ -9,6 +9,8 @@ TagManager:
   - RecipePanel
   - WinPanel
   - ProgressPanel
+  - Enemy
+  - GameMaker
   layers:
   - Default
   - TransparentFX
