@@ -51,19 +51,11 @@ public class Pentagramo : MonoBehaviour
                     parentTransform.rotation = Quaternion.LookRotation(inputDir, Vector3.up);
                     // Movement
                     parentTransform.position = parentTransform.position + parentTransform.forward * MovementSpeed * Time.deltaTime;
-<<<<<<< HEAD
-
-
                 }
-=======
-					isMoving = true;
-
-				}
-				else
-				{
-					isMoving = false;
-				}
->>>>>>> fb12c19a15e0e2f53b4cc8f66be2d3aca56b81db
+                else
+                {
+                    isMoving = false;
+                }
                 break;
             case State.Dropping:
                 rotationTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
