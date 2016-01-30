@@ -54,7 +54,157 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: eye_armature|blink
+      takeName: eye_armature|blink
+      firstFrame: 0
+      lastFrame: 56
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: eye_armature
+        weight: 1
+      - path: eye_armature/root
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_left
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_left/eyelid_bottom_left_end
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_right
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_right/eyelid_bottom_right_end
+        weight: 1
+      - path: eye_armature/root/eyelid_top_left
+        weight: 1
+      - path: eye_armature/root/eyelid_top_left/eyelid_top_left_end
+        weight: 1
+      - path: eye_armature/root/eyelid_top_right
+        weight: 1
+      - path: eye_armature/root/eyelid_top_right/eyelid_top_right_end
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: eye_armature|walk.001
+      takeName: eye_armature|walk.001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: eye_armature
+        weight: 1
+      - path: eye_armature/root
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_left
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_left/eyelid_bottom_left_end
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_right
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_right/eyelid_bottom_right_end
+        weight: 1
+      - path: eye_armature/root/eyelid_top_left
+        weight: 1
+      - path: eye_armature/root/eyelid_top_left/eyelid_top_left_end
+        weight: 1
+      - path: eye_armature/root/eyelid_top_right
+        weight: 1
+      - path: eye_armature/root/eyelid_top_right/eyelid_top_right_end
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: eye_armature|walkadvbadv
+      takeName: eye_armature|walkadvbadv
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: eye_armature
+        weight: 1
+      - path: eye_armature/root
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_left
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_left/eyelid_bottom_left_end
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_right
+        weight: 1
+      - path: eye_armature/root/eyelid_bottom_right/eyelid_bottom_right_end
+        weight: 1
+      - path: eye_armature/root/eyelid_top_left
+        weight: 1
+      - path: eye_armature/root/eyelid_top_left/eyelid_top_left_end
+        weight: 1
+      - path: eye_armature/root/eyelid_top_right
+        weight: 1
+      - path: eye_armature/root/eyelid_top_right/eyelid_top_right_end
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

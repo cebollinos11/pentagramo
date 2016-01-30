@@ -82,8 +82,18 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        Application.LoadLevel(nextLevel);
-        ++nextLevel;
+        if(nextLevel >= Application.levelCount)
+        {
+            // If we have finished the last level, load the start screen and self destroy
+            Application.LoadLevel(0);
+            Destroy(gameObject);            
+        }
+        else
+        {
+            // Otherwise, load the next level and increment
+            Application.LoadLevel(nextLevel);
+            ++nextLevel;
+        }        
     }
     
     public void Restart()

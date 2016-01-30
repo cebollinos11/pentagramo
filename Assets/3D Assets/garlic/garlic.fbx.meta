@@ -1,40 +1,42 @@
 fileFormatVersion: 2
-guid: 31ade10c45f294355b1c5e7544681c31
-timeCreated: 1454181822
+guid: 9347033bb2dba464089bd4e0d6429e7f
+timeCreated: 1454192510
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: eye_armature
-    100002: eyelid_bottom_left
-    100004: eyelid_bottom_left_end
-    100006: eyelid_bottom_right
-    100008: eyelid_bottom_right_end
-    100010: eyelid_top_left
-    100012: eyelid_top_left_end
-    100014: eyelid_top_right
-    100016: eyelid_top_right_end
-    100018: //RootNode
-    100020: Icosphere
-    100022: root
-    400000: eye_armature
-    400002: eyelid_bottom_left
-    400004: eyelid_bottom_left_end
-    400006: eyelid_bottom_right
-    400008: eyelid_bottom_right_end
-    400010: eyelid_top_left
-    400012: eyelid_top_left_end
-    400014: eyelid_top_right
-    400016: eyelid_top_right_end
-    400018: //RootNode
-    400020: Icosphere
-    400022: root
-    4300000: Icosphere
-    7400000: eye_armature|blink
-    7400002: eye_armature|walk.001
-    7400004: eye_armature|walkadvbadv
+    100000: Armature
+    100002: eye_slut_01
+    100004: eye_slut_02
+    100006: eye_slut_03
+    100008: //RootNode
+    100010: garlic
+    100012: one
+    100014: one_end
+    100016: root
+    100018: three
+    100020: three_end
+    100022: two
+    100024: two_end
+    400000: Armature
+    400002: eye_slut_01
+    400004: eye_slut_02
+    400006: eye_slut_03
+    400008: garlic
+    400010: //RootNode
+    400012: one
+    400014: one_end
+    400016: root
+    400018: three
+    400020: three_end
+    400022: two
+    400024: two_end
+    4300000: garlic
+    7400000: Armature|Action
+    7400002: Armature|walk
+    7400004: garlic|Action
     9500000: //RootNode
-    13700000: Icosphere
+    13700000: garlic
   materials:
     importMaterials: 1
     materialName: 0
@@ -56,10 +58,62 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: eye_armature|blink
-      takeName: eye_armature|blink
+      name: Armature|Action
+      takeName: Armature|Action
       firstFrame: 0
-      lastFrame: 56
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/one
+        weight: 1
+      - path: Armature/root/one/one_end
+        weight: 1
+      - path: Armature/root/three
+        weight: 1
+      - path: Armature/root/three/three_end
+        weight: 1
+      - path: Armature/root/two
+        weight: 1
+      - path: Armature/root/two/two_end
+        weight: 1
+      - path: eye_slut_01
+        weight: 1
+      - path: eye_slut_02
+        weight: 1
+      - path: eye_slut_03
+        weight: 1
+      - path: garlic
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|walk
+      takeName: Armature|walk
+      firstFrame: 0
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -81,33 +135,35 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: eye_armature
+      - path: Armature
         weight: 1
-      - path: eye_armature/root
+      - path: Armature/root
         weight: 1
-      - path: eye_armature/root/eyelid_bottom_left
+      - path: Armature/root/one
         weight: 1
-      - path: eye_armature/root/eyelid_bottom_left/eyelid_bottom_left_end
+      - path: Armature/root/one/one_end
         weight: 1
-      - path: eye_armature/root/eyelid_bottom_right
+      - path: Armature/root/three
         weight: 1
-      - path: eye_armature/root/eyelid_bottom_right/eyelid_bottom_right_end
+      - path: Armature/root/three/three_end
         weight: 1
-      - path: eye_armature/root/eyelid_top_left
+      - path: Armature/root/two
         weight: 1
-      - path: eye_armature/root/eyelid_top_left/eyelid_top_left_end
+      - path: Armature/root/two/two_end
         weight: 1
-      - path: eye_armature/root/eyelid_top_right
+      - path: eye_slut_01
         weight: 1
-      - path: eye_armature/root/eyelid_top_right/eyelid_top_right_end
+      - path: eye_slut_02
         weight: 1
-      - path: Icosphere
+      - path: eye_slut_03
+        weight: 1
+      - path: garlic
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: eye_armature|walk.001
-      takeName: eye_armature|walk.001
+      name: garlic|Action
+      takeName: garlic|Action
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -131,77 +187,29 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: eye_armature
+      - path: Armature
         weight: 1
-      - path: eye_armature/root
+      - path: Armature/root
         weight: 1
-      - path: eye_armature/root/eyelid_bottom_left
+      - path: Armature/root/one
         weight: 1
-      - path: eye_armature/root/eyelid_bottom_left/eyelid_bottom_left_end
+      - path: Armature/root/one/one_end
         weight: 1
-      - path: eye_armature/root/eyelid_bottom_right
+      - path: Armature/root/three
         weight: 1
-      - path: eye_armature/root/eyelid_bottom_right/eyelid_bottom_right_end
+      - path: Armature/root/three/three_end
         weight: 1
-      - path: eye_armature/root/eyelid_top_left
+      - path: Armature/root/two
         weight: 1
-      - path: eye_armature/root/eyelid_top_left/eyelid_top_left_end
+      - path: Armature/root/two/two_end
         weight: 1
-      - path: eye_armature/root/eyelid_top_right
+      - path: eye_slut_01
         weight: 1
-      - path: eye_armature/root/eyelid_top_right/eyelid_top_right_end
+      - path: eye_slut_02
         weight: 1
-      - path: Icosphere
+      - path: eye_slut_03
         weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: eye_armature|walkadvbadv
-      takeName: eye_armature|walkadvbadv
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: eye_armature
-        weight: 1
-      - path: eye_armature/root
-        weight: 1
-      - path: eye_armature/root/eyelid_bottom_left
-        weight: 1
-      - path: eye_armature/root/eyelid_bottom_left/eyelid_bottom_left_end
-        weight: 1
-      - path: eye_armature/root/eyelid_bottom_right
-        weight: 1
-      - path: eye_armature/root/eyelid_bottom_right/eyelid_bottom_right_end
-        weight: 1
-      - path: eye_armature/root/eyelid_top_left
-        weight: 1
-      - path: eye_armature/root/eyelid_top_left/eyelid_top_left_end
-        weight: 1
-      - path: eye_armature/root/eyelid_top_right
-        weight: 1
-      - path: eye_armature/root/eyelid_top_right/eyelid_top_right_end
-        weight: 1
-      - path: Icosphere
+      - path: garlic
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
