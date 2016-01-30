@@ -33,7 +33,7 @@ public class Pentagramo : MonoBehaviour
     void Update()
     {
         StateMachine();
-        Debug.Log(state);
+        //Debug.Log(state);
         switch (state)
         {
             case State.Upright:
