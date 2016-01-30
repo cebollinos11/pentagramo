@@ -128,6 +128,10 @@ Prefab:
       propertyPath: m_Name
       value: Actor Book (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 11439734, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+      propertyPath: ai
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
   m_IsPrefabParent: 0
@@ -620,7 +624,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 088bed88734f6af46b69ca11c61bdd74, type: 2}
     - target: {fileID: 2336768, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3314094, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
       propertyPath: m_Mesh
@@ -661,6 +665,10 @@ Prefab:
     - target: {fileID: 413030, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336768, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
+      propertyPath: m_CastShadows
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
@@ -703,6 +711,10 @@ Prefab:
     - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11439734, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+      propertyPath: ai
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
@@ -780,6 +792,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1640791538}
   m_RootOrder: 0
+--- !u!1 &1630560673 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 120248, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
+  m_PrefabInternal: {fileID: 1224328166}
+--- !u!96 &1630560680
+TrailRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1630560673}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 088bed88734f6af46b69ca11c61bdd74, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: 1
+  m_StartWidth: 1
+  m_EndWidth: 1
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 4280090550
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 4287365020
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 4294920532
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 4294922625
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
 --- !u!1 &1640791537
 GameObject:
   m_ObjectHideFlags: 0
