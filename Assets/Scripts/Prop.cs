@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Prop : Actor {
 
+    public GameObject Target;
+
     public enum aiTypes{
         random,scared
 
@@ -21,8 +23,11 @@ public class Prop : Actor {
                 base.FindNewTarget();
                 break;
             case aiTypes.scared:
-                Debug.Log(player);
+                
                 currentTarget = transform.position - player.transform.position;
+                currentTarget  = Vector3.Scale( currentTarget , new Vector3(1,0,1))+new Vector3(0,1,0)*transform.position.y;
+                
+                Debug.Log("going to "+currentTarget.ToString());
                 break;
         
         }
