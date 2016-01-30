@@ -11,6 +11,7 @@ public class Enemy : Actor {
 	// Use this for initialization
 	public override void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
+
         pGramo = player.GetComponent<Pentagramo>();
         anim = GetComponentInChildren<Animator>();
         base.Start();
