@@ -38,7 +38,7 @@ public class Pentagramo : MonoBehaviour
         state = State.Upright;
         pDisplay = GetComponent<PentagramoDisplay>();
 
-        gameManager = GameObject.FindGameObjectWithTag("GameMaker").GetComponent<GameManager>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         
     }
 
