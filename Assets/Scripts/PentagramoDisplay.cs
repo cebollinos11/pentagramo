@@ -9,10 +9,16 @@ public class PentagramoDisplay : MonoBehaviour {
 	public GameObject dullFace;
 	public GameObject glowingFace;
 
+    
+
 	bool isFading;
 	// Use this for initialization
+
+   
+
 	void Start () {
         halo.SetActive(false);
+        
 	}
 
 
@@ -56,11 +62,11 @@ public class PentagramoDisplay : MonoBehaviour {
 
 		if(glowingFace.activeSelf){
 			glowingFace.SetActive(false);
-            halo.SetActive(false);
+            //halo.SetActive(false);
 		}
 		else {
 			glowingFace.SetActive(true);
-            halo.SetActive(true);
+            //halo.SetActive(true);
 		}
 		//yield return new WaitForSeconds(.5f);
 		//glowingFace.SetActive(true);

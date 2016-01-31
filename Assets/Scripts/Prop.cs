@@ -4,6 +4,7 @@ using System.Collections;
 public class Prop : Actor {
 
     GameObject followWho;
+    bool alreadySwallowed;
     
 
     public enum aiTypes{
@@ -65,21 +66,27 @@ public class Prop : Actor {
     void GetSwallowed()
     {
 
+        if (!alreadySwallowed) {
+            StartCoroutine(DieRoutine());
+            alreadySwallowed = true;
+        }
 
-        StartCoroutine(DieRoutine());
+        
 
     }
 
 
     IEnumerator DieRoutine()
     {
+        Debug.Log("Audioexecuted");
+        GetComponent<AudioSource>().Play();
         maxSpeed = 0f;
-        Vector3 ratio = transform.localScale / 50f;
+        Vector3 ratio = transform.localScale / 20f;
 
         do
         {
             transform.localScale -= ratio;
-            transform.Translate(0, 0.1f, 0);
+            //transform.Translate(0, 0.1f, 0);
             yield return new WaitForSeconds(0.1f);
         } while (transform.localScale.x > 0);
 
