@@ -4,7 +4,7 @@ using System.Collections;
 public class Pentagramo : MonoBehaviour
 {
 
-    
+
     public float MovementSpeed = 5;
     public float FlatDuration = 1;
 
@@ -18,7 +18,7 @@ public class Pentagramo : MonoBehaviour
     GameManager gameManager;
     bool isdead;
 
-    
+
 
     public enum State
     {
@@ -30,7 +30,7 @@ public class Pentagramo : MonoBehaviour
         Fading,
         Rising
     }
-	public bool isMoving;
+    public bool isMoving;
 
     public State state;
     private float timer;
@@ -45,7 +45,7 @@ public class Pentagramo : MonoBehaviour
         pDisplay = GetComponent<PentagramoDisplay>();
 
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        
+
     }
 
     // Update is called once per frame
@@ -65,7 +65,7 @@ public class Pentagramo : MonoBehaviour
                     // Movement
                     parentTransform.position = parentTransform.position + parentTransform.forward * MovementSpeed * Time.deltaTime;
 
-                    FaceToRotate.transform.Rotate(-Vector3.forward*Time.deltaTime*300f);
+                    FaceToRotate.transform.Rotate(-Vector3.forward * Time.deltaTime * 300f);
                     isMoving = true;
                 }
                 else
@@ -75,17 +75,17 @@ public class Pentagramo : MonoBehaviour
                 break;
             case State.Dropping:
                 rotationTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
-                GameObject go = (GameObject)Instantiate(invokeParticles, transform.position+Vector3.up, Quaternion.identity);
+                GameObject go = (GameObject)Instantiate(invokeParticles, transform.position + Vector3.up, Quaternion.identity);
                 go.transform.Rotate(new Vector3(-90f, 0, 0));
                 isMoving = false;
                 break;
             case State.Flat:
-                            
+
                 break;
             case State.FrameGlowing:
                 pDisplay.StartParticles();
-                
-                
+
+
                 state = State.Glowing;
                 break;
 
@@ -103,31 +103,28 @@ public class Pentagramo : MonoBehaviour
         }
     }
 
-    public void Die() {
-        if (!isdead) {
+    public void Die()
+    {
+        if (!isdead)
+        {
             isdead = true;
             Debug.Log("GAME OVER");
-            
+
             StartCoroutine(DieRoutine());
             GetComponent<AudioSource>().Play();
-
-<<<<<<< HEAD
-        
         }
-        
-=======
+
         Debug.Log("GAME OVER");
-       // GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().Play();
         StartCoroutine(DieRoutine());
->>>>>>> 91836510a5d2ced7ac17f8b6fcc355bc5de2026f
-        
-    
+
     }
 
 
-    IEnumerator DieRoutine() {
+    IEnumerator DieRoutine()
+    {
 
-        Vector3 ratio = parentTransform.localScale/10f;
+        Vector3 ratio = parentTransform.localScale / 10f;
 
         do
         {
@@ -136,22 +133,22 @@ public class Pentagramo : MonoBehaviour
         } while (parentTransform.localScale.x > 0);
 
         yield return new WaitForSeconds(3f);
-		Destroy(parentTransform.gameObject);
+        Destroy(parentTransform.gameObject);
 
         gameManager.Restart();
     }
 
 
-  
+
 
     void StateMachine()
     {
-        switch(state)
+        switch (state)
         {
             case State.Upright:
-                if(Input.GetButtonDown("Fire1"))
+                if (Input.GetButtonDown("Fire1"))
                 {
-                    state = State.Dropping;    
+                    state = State.Dropping;
                 }
                 break;
             case State.Dropping:
@@ -163,14 +160,14 @@ public class Pentagramo : MonoBehaviour
                 {
                     state = State.Rising;
                 }
-                else if(Input.GetButtonDown("Fire2"))
+                else if (Input.GetButtonDown("Fire2"))
                 {
                     state = State.FrameGlowing;
                 }
                 break;
             case State.Glowing:
                 // TODO: Switch to GetButton?
-                if(Input.GetButtonUp("Fire2"))
+                if (Input.GetButtonUp("Fire2"))
                 {
                     state = State.Fading;
                     timer = 0;
@@ -191,6 +188,6 @@ public class Pentagramo : MonoBehaviour
                 state = State.Upright;
                 break;
         }
-        
+
     }
 }

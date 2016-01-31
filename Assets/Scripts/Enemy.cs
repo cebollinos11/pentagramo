@@ -87,7 +87,8 @@ public class Enemy : Actor {
     {
 
         if(pGramo.state == Pentagramo.State.Glowing  || pGramo.state == Pentagramo.State.Fading)
-        {   
+        {
+            Debug.Log(Vector3.Distance(this.transform.position, player.transform.position));
 			if(playerDistance > Vector3.Distance(this.transform.position, player.transform.position))
             	StartChasing();
         }
