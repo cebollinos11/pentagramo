@@ -5,7 +5,7 @@ public class Actor : MonoBehaviour {
     
     protected Vector3 currentTarget;
     //public float speed;
-    float wanderRange = 5f;
+    public float wanderRange = 5f;
     public float wanderFrequencyChange;
     float currentWanderFrequencyTimer;
     public float maxSpeed;
