@@ -105,7 +105,7 @@ public class Pentagramo : MonoBehaviour
     public void Die() {
 
         Debug.Log("GAME OVER");
-        GetComponent<AudioSource>().Play();
+       // GetComponent<AudioSource>().Play();
         StartCoroutine(DieRoutine());
         
     
@@ -123,8 +123,9 @@ public class Pentagramo : MonoBehaviour
         } while (parentTransform.localScale.x > 0);
 
         yield return new WaitForSeconds(3f);
+		Destroy(parentTransform.gameObject);
+
         gameManager.Restart();
-        Destroy(parentTransform.gameObject);
     }
 
 
