@@ -159,98 +159,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!1001 &119796417
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.91553903
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .730000019
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.16231465
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 188818, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_Name
-      value: Actor Book (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 11439734, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: ai
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &191155241
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 476632, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -13.5937824
-      objectReference: {fileID: 0}
-    - target: {fileID: 476632, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .819999993
-      objectReference: {fileID: 0}
-    - target: {fileID: 476632, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 15.4487295
-      objectReference: {fileID: 0}
-    - target: {fileID: 476632, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 476632, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 476632, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 476632, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 476632, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &228461805
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 9
 --- !u!1 &314493390 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 120248, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
@@ -471,7 +379,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1640791538}
   m_RootOrder: 1
---- !u!1001 &408292354
+--- !u!1001 &622107989
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -480,15 +388,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .99208498
+      value: -12.9600925
       objectReference: {fileID: 0}
     - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.12988946e-17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .589228153
+      value: 9.68204975
       objectReference: {fileID: 0}
     - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalRotation.x
@@ -510,13 +418,71 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: ai
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: wanderFrequencyChange
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 177730, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_Name
-      value: Actor Dildo (1)
+      value: Actor Dildo (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &659756259
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -12.9600925
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.68204975
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: ai
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: wanderFrequencyChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 177730, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_Name
+      value: Actor Dildo (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
@@ -606,7 +572,61 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 4
+--- !u!1001 &841406815
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -12.9600925
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.68204975
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: ai
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: wanderFrequencyChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 177730, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: m_Name
+      value: Actor Dildo (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1026053426
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,56 +773,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1640791538}
   m_RootOrder: 3
---- !u!1001 &1088255674
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.33216619
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.10809363e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 4.22106457
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 177730, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_Name
-      value: Actor Dildo (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: ai
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1224328166
 Prefab:
   m_ObjectHideFlags: 0
@@ -890,102 +860,6 @@ Prefab:
     - {fileID: 9605734, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1350881254
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.91553903
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .730000019
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.16231465
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11439734, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-      propertyPath: ai
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1355211183
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.33216619
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 4.22106457
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 177730, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: m_Name
-      value: Actor Dildo (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-      propertyPath: ai
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1393067880
 Prefab:
   m_ObjectHideFlags: 0
@@ -1027,6 +901,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: ai
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: wanderFrequencyChange
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1136,7 +1014,7 @@ Transform:
   - {fileID: 1080297246}
   - {fileID: 1657443457}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
 --- !u!1 &1657443453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,50 +1147,58 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
---- !u!1001 &2132405548
+  m_RootOrder: 6
+--- !u!1001 &1726239862
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.21977854
+      value: -12.9600925
       objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.30155807e-17
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 9.52093697
+      value: 9.68204975
       objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 430408, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+    - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 188818, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: ai
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: wanderFrequencyChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 177730, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_Name
-      value: Actor Book (1)
+      value: Actor Dildo (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 560be6cf9c0be25409edf96bacfeb452, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
   m_IsPrefabParent: 0
