@@ -16,6 +16,7 @@ public class Pentagramo : MonoBehaviour
     PentagramoDisplay pDisplay;
 
     GameManager gameManager;
+    bool isdead;
 
     
 
@@ -103,10 +104,16 @@ public class Pentagramo : MonoBehaviour
     }
 
     public void Die() {
+        if (!isdead) {
+            isdead = true;
+            Debug.Log("GAME OVER");
+            
+            StartCoroutine(DieRoutine());
+            GetComponent<AudioSource>().Play();
 
-        Debug.Log("GAME OVER");
-        GetComponent<AudioSource>().Play();
-        StartCoroutine(DieRoutine());
+        
+        }
+        
         
     
     }
@@ -114,7 +121,7 @@ public class Pentagramo : MonoBehaviour
 
     IEnumerator DieRoutine() {
 
-        Vector3 ratio = parentTransform.localScale/50f;
+        Vector3 ratio = parentTransform.localScale/10f;
 
         do
         {

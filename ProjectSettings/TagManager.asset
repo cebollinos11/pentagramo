@@ -11,6 +11,7 @@ TagManager:
   - ProgressPanel
   - Enemy
   - GameManager
+  - RecipeImage
   layers:
   - Default
   - TransparentFX
