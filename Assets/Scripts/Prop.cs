@@ -96,7 +96,7 @@ public class Prop : Actor {
             yield return new WaitForSeconds(0.1f);
         } while (transform.localScale.x > 0);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0.1f);
         recipeManager.UpdateIngredient(ObjectID);
         Destroy(transform.gameObject);
     }

@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     }
     private State state;
 
-    private GameObject recipePanel;
+    private GameObject recipeImage;
     private GameObject winPanel;
     private GameObject levelParent;
     private GameObject progressPanel;
@@ -34,12 +34,17 @@ public class GameManager : MonoBehaviour
     void OnLevelWasLoaded(int level)
     {
         // If it's not the start screen
-        recipePanel = GameObject.FindGameObjectWithTag("RecipePanel");
-        if (recipePanel != null)
+        recipeImage = GameObject.FindGameObjectWithTag("RecipeImage");
+        if (recipeImage != null)
         {
             winPanel = GameObject.FindGameObjectWithTag("WinPanel");
             levelParent = GameObject.FindGameObjectWithTag("LevelParent");
             progressPanel = GameObject.FindGameObjectWithTag("ProgressPanel");
+            // Disable everything except the recipe panel
+            winPanel.SetActive(false);
+            levelParent.SetActive(false);
+            progressPanel.SetActive(false);
+
             state = State.RecipeScreen;
         }
     }
@@ -60,7 +65,7 @@ public class GameManager : MonoBehaviour
                 {
                     state = State.Playing;
                     // Disable recipe panel and enable game
-                    recipePanel.SetActive(false);
+                    recipeImage.SetActive(false);
                     levelParent.SetActive(true);
                     progressPanel.SetActive(true);
                 }

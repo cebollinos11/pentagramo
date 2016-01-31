@@ -25,6 +25,13 @@ public class Recipe : MonoBehaviour
     public void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+        for (int i = 0; i < Ingredients.Count; ++i)
+        {
+
+            ProgressCounters[i].text = CollectedAmounts[i] + " / " + NeededAmounts[i];
+        }
+
     }
 
     public void UpdateIngredient(Ingredient id)

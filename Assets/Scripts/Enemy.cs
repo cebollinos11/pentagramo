@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Enemy : Actor {
-    GameObject player;
+    [SerializeField]GameObject player;
+    [SerializeField]
     bool chasingPlayer;
     public float chaseBoost;
     Animator anim;
