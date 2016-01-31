@@ -79,7 +79,7 @@ public class Prop : Actor {
         do
         {
             transform.localScale -= ratio;
-            transform.Translate(0, 0.1f, 0);
+            //transform.Translate(0, 0.1f, 0);
             yield return new WaitForSeconds(0.1f);
         } while (transform.localScale.x > 0);
 
