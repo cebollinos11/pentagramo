@@ -48,6 +48,8 @@ public class Actor : MonoBehaviour {
         {
             rB.velocity = rB.velocity.normalized * maxSpeed;
         }
+
+        transform.LookAt(-currentTarget);
     }
 	
 	// Update is called once per frame
