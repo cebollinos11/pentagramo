@@ -1013,6 +1013,14 @@ Prefab:
       propertyPath: wanderFrequencyChange
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: maxSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: wanderRange
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
   m_IsPrefabParent: 0
@@ -1499,6 +1507,14 @@ Prefab:
     - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
       propertyPath: wanderFrequencyChange
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: maxSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: wanderRange
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
@@ -2133,6 +2149,10 @@ Prefab:
       propertyPath: wanderFrequencyChange
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 116642, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
   m_IsPrefabParent: 0
@@ -2361,6 +2381,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
       propertyPath: wanderFrequencyChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: ai
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: maxSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: wanderRange
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2916,6 +2948,14 @@ Prefab:
       propertyPath: wanderFrequencyChange
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: wanderRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: maxSpeed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
   m_IsPrefabParent: 0
@@ -3361,7 +3401,7 @@ Transform:
   m_LocalScale: {x: 44.8274231, y: 1.00000012, z: 24.4553757}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 34
 --- !u!4 &1786617911 stripped
 Transform:
   m_PrefabParentObject: {fileID: 495638, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
@@ -3663,6 +3703,10 @@ Prefab:
       propertyPath: wanderFrequencyChange
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 116642, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
   m_IsPrefabParent: 0
@@ -3732,7 +3776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1982393755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3873,6 +3917,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
       propertyPath: wanderFrequencyChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: maxSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484598, guid: ac2f523bd5fc74fe1b71c88f8245cf9a, type: 2}
+      propertyPath: wanderRange
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
