@@ -286,7 +286,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.37, y: 1.07000005, z: 15.2600002}
+  m_LocalPosition: {x: 20.6379547, y: 1, z: 42.8745232}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464034}
@@ -543,9 +543,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b9bfa40fd970f84bb8b602ff956528a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wanderRange: 5
-  wanderFrequencyChange: 5
-  maxSpeed: 5
+  wanderRange: 1
+  wanderFrequencyChange: 1
+  maxSpeed: 1
   followWho: {fileID: 0}
   ObjectID: 0
   ai: 0
@@ -559,8 +559,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: .899999976
+  m_Center: {x: 0, y: .899999976, z: 0}
 --- !u!137 &13773992
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
