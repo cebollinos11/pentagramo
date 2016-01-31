@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PentagramoSounds : MonoBehaviour {
 
-	public Pentagramo pentagramo;
+	Pentagramo pentagramo;
 	
 	public AudioSource walkStart;
 	public AudioSource walkLoop;
@@ -12,13 +12,17 @@ public class PentagramoSounds : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+        pentagramo = GetComponent<Pentagramo>();
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        
 		if(pentagramo.isMoving){
 			if(!startedMoving){
+                
 				startedMoving = true;
 				walkStart.Play();
 				walkLoop.Play(); //TODO needs to fade in

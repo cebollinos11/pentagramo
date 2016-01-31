@@ -65,6 +65,7 @@ public class Pentagramo : MonoBehaviour
                     parentTransform.position = parentTransform.position + parentTransform.forward * MovementSpeed * Time.deltaTime;
 
                     FaceToRotate.transform.Rotate(-Vector3.forward*Time.deltaTime*300f);
+                    isMoving = true;
                 }
                 else
                 {
@@ -73,14 +74,16 @@ public class Pentagramo : MonoBehaviour
                 break;
             case State.Dropping:
                 rotationTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
+                GameObject go = (GameObject)Instantiate(invokeParticles, transform.position+Vector3.up, Quaternion.identity);
+                go.transform.Rotate(new Vector3(-90f, 0, 0));
+                isMoving = false;
                 break;
             case State.Flat:
                             
                 break;
             case State.FrameGlowing:
                 pDisplay.StartParticles();
-                GameObject go = (GameObject)Instantiate(invokeParticles, transform.position+Vector3.up, Quaternion.identity);
-                go.transform.Rotate(new Vector3(-90f, 0, 0));
+                
                 
                 state = State.Glowing;
                 break;
