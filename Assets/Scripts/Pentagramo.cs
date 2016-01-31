@@ -94,6 +94,7 @@ public class Pentagramo : MonoBehaviour
     public void Die() {
 
         Debug.Log("GAME OVER");
+        GetComponent<AudioSource>().Play();
         StartCoroutine(DieRoutine());
         
     
