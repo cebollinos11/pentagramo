@@ -8,6 +8,8 @@ public class Enemy : Actor {
     Animator anim;
     Pentagramo pGramo;
 
+	public float playerDistance = 5;
+
 	// Use this for initialization
 	public override void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -85,7 +87,8 @@ public class Enemy : Actor {
 
         if(pGramo.state == Pentagramo.State.Glowing  || pGramo.state == Pentagramo.State.Fading)
         {   
-            StartChasing();
+			if(playerDistance > Vector3.Distance(this.transform.position, player.transform.position))
+            	StartChasing();
         }
         else{
             StopChasing();

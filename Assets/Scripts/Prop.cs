@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Prop : Actor {
 
-    GameObject followWho;
+    public GameObject followWho;
     bool alreadySwallowed;
     GameObject satanicParticle;
 
@@ -50,7 +50,7 @@ public class Prop : Actor {
         satanicParticle = (GameObject)Resources.Load("SatanicParticle");
 
         Debug.Log("player found " + player);
-        if (ai == aiTypes.followMop)
+        if (ai == aiTypes.followMop && followWho == null)
         {
             followWho = GameObject.FindGameObjectWithTag("Enemy");
             Debug.Log("following " + followWho.ToString());
