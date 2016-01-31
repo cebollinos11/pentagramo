@@ -5011,6 +5011,10 @@ Prefab:
       propertyPath: wanderRange
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11477956, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
+      propertyPath: chaseBoost
+      value: 1.29999995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
   m_IsPrefabParent: 0
@@ -7297,7 +7301,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11477956, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
       propertyPath: maxSpeed
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 177676, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
       propertyPath: m_Name
@@ -7309,11 +7313,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11477956, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
       propertyPath: playerDistance
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 177676, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477956, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
+      propertyPath: chaseBoost
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477956, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
+      propertyPath: chasingPlayer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a2f80e131e324c73be1ae5ff24b5109, type: 2}
