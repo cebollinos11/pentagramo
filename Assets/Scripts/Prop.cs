@@ -5,7 +5,7 @@ public class Prop : Actor {
 
     GameObject followWho;
     bool alreadySwallowed;
-    
+    GameObject satanicParticle;
 
     public enum aiTypes{
         random,scared,followMop
@@ -46,6 +46,9 @@ public class Prop : Actor {
 
     public override void Start()
     {
+
+        satanicParticle = (GameObject)Resources.Load("SatanicParticle");
+
         Debug.Log("player found " + player);
         if (ai == aiTypes.followMop)
         {
@@ -67,6 +70,9 @@ public class Prop : Actor {
     {
 
         if (!alreadySwallowed) {
+            GameObject go = (GameObject)Instantiate(satanicParticle, transform.position+Vector3.up, Quaternion.identity);
+            go.transform.parent = transform;
+            go.transform.Rotate(new Vector3(-90f, 0, 0));
             StartCoroutine(DieRoutine());
             alreadySwallowed = true;
         }
