@@ -17,6 +17,8 @@ public class Pentagramo : MonoBehaviour
 
     GameManager gameManager;
 
+    
+
     public enum State
     {
         Upright,
@@ -31,10 +33,13 @@ public class Pentagramo : MonoBehaviour
 
     public State state;
     private float timer;
+    GameObject invokeParticles;
 
     // Use this for initialization
     void Start()
     {
+
+        invokeParticles = (GameObject)Resources.Load("InvocationParticle");
         state = State.Upright;
         pDisplay = GetComponent<PentagramoDisplay>();
 
@@ -74,6 +79,9 @@ public class Pentagramo : MonoBehaviour
                 break;
             case State.FrameGlowing:
                 pDisplay.StartParticles();
+                GameObject go = (GameObject)Instantiate(invokeParticles, transform.position+Vector3.up, Quaternion.identity);
+                go.transform.Rotate(new Vector3(-90f, 0, 0));
+                
                 state = State.Glowing;
                 break;
 

@@ -514,6 +514,10 @@ Prefab:
       propertyPath: m_Name
       value: Actor Dildo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: ai
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
   m_IsPrefabParent: 0
@@ -792,6 +796,10 @@ Prefab:
       propertyPath: m_Name
       value: Actor Dildo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: ai
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
   m_IsPrefabParent: 0
@@ -832,7 +840,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495638, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 19833380, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
       propertyPath: SizeModule.enabled
@@ -874,6 +882,10 @@ Prefab:
       propertyPath: SoundPortalOn
       value: 
       objectReference: {fileID: 8300000, guid: 9e04d55e42bbbad45a80e4ba0d2119a3, type: 3}
+    - target: {fileID: 2336768, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9605734, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f7338acb76b514e35a0aa3c196ffcc9a, type: 2}
@@ -967,6 +979,10 @@ Prefab:
       propertyPath: m_Name
       value: Actor Dildo (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: ai
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
   m_IsPrefabParent: 0
@@ -1008,6 +1024,10 @@ Prefab:
     - target: {fileID: 449878, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464600, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
+      propertyPath: ai
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bbf4fb8338514771a8383384bd48886, type: 2}
