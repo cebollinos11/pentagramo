@@ -111,9 +111,15 @@ public class Pentagramo : MonoBehaviour
             StartCoroutine(DieRoutine());
             GetComponent<AudioSource>().Play();
 
+<<<<<<< HEAD
         
         }
         
+=======
+        Debug.Log("GAME OVER");
+       // GetComponent<AudioSource>().Play();
+        StartCoroutine(DieRoutine());
+>>>>>>> 91836510a5d2ced7ac17f8b6fcc355bc5de2026f
         
     
     }
@@ -130,8 +136,9 @@ public class Pentagramo : MonoBehaviour
         } while (parentTransform.localScale.x > 0);
 
         yield return new WaitForSeconds(3f);
+		Destroy(parentTransform.gameObject);
+
         gameManager.Restart();
-        Destroy(parentTransform.gameObject);
     }
 
 
