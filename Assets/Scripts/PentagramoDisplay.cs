@@ -8,6 +8,7 @@ public class PentagramoDisplay : MonoBehaviour {
     public ParticleSystem particles;
 	public GameObject dullFace;
 	public GameObject glowingFace;
+    
 
     
 
@@ -37,6 +38,7 @@ public class PentagramoDisplay : MonoBehaviour {
 			glowingFace.SetActive(true);
             halo.SetActive(true);
 			dullFace.SetActive(false);
+            glowingFace.transform.Rotate(-Vector3.forward * Time.deltaTime * 50f);
             
 		}
 		else if(pentagramo.state == Pentagramo.State.Fading){
